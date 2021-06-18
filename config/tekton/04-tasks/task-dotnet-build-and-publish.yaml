@@ -36,17 +36,17 @@ spec:
         - name: SECRET_USERNAME
           valueFrom:
             secretKeyRef:
-              name: artifactory-secret
+              name: artifactory-auth
               key: username
         - name: SECRET_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: artifactory-secret
+              name: artifactory-auth
               key: password
         - name: SECRET_URL
           valueFrom:
             secretKeyRef:
-              name: artifactory-secret
+              name: artifactory-auth
               key: url
 
       command: ["/bin/bash", "-c"]
