@@ -36,7 +36,7 @@ spec:
   project: default
   source:
     path: quickstart/aspnet-core/config/tekton
-    repoURL: https://github.com/kskels/azure-cache-redis-samples.git
+    repoURL: https://github.com/kskels/dotnet-gitops.git
   syncPolicy:
     automated:
       prune: true
