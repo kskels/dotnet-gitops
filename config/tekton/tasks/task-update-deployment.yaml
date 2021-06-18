@@ -27,3 +27,6 @@ spec:
                 "image":"$(inputs.params.IMAGE)"
               }]
             }}}}'
+
+          oc rollout -n $(inputs.params.namespace) \
+            status deploy/$(inputs.params.deployment)
