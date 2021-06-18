@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: github-com-secret
+  name: github-auth
   annotations:
     tekton.dev/git-0: https://github.com
 type: kubernetes.io/basic-auth
