@@ -25,6 +25,7 @@ spec:
   steps:
     - name: patch
       image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+      resources: {}
       workingDir: /workspace/source
       command: ["/bin/bash", "-c"]
       args:
