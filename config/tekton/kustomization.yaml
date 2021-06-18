@@ -1,25 +1,25 @@
 resources:
-- namespaces/dotnet-cicd.yaml
-- namespaces/dotnet-dev.yaml
-- namespaces/dotnet-prod.yaml
+- 01-namespaces/dotnet-cicd.yaml
+- 01-namespaces/dotnet-dev.yaml
+- 01-namespaces/dotnet-prod.yaml
 
-- rolebindings/argocd-admin.yaml
-- rolebindings/tekton-admin-dev.yaml
-- rolebindings/tekton-admin-prod.yaml
-- rolebindings/tekton-image-puller-dev.yaml
-- rolebindings/tekton-image-puller-prod.yaml
+- 02-rolebindings/argocd-admin.yaml
+- 02-rolebindings/tekton-admin-dev.yaml
+- 02-rolebindings/tekton-admin-prod.yaml
+- 02-rolebindings/tekton-image-puller-dev.yaml
+- 02-rolebindings/tekton-image-puller-prod.yaml
 
-- tasks/task-apply-manifests.yaml
-- tasks/task-deploy-to-prod.yaml
-- tasks/task-dotnet-build-and-publish.yaml
-- tasks/task-dotnet-build.yaml
-- tasks/task-get-archive.yaml
-- tasks/task-update-deployment.yaml
+- 04-tasks/task-apply-manifests.yaml
+- 04-tasks/task-deploy-to-prod.yaml
+- 04-tasks/task-dotnet-build-and-publish.yaml
+- 04-tasks/task-dotnet-build.yaml
+- 04-tasks/task-get-archive.yaml
+- 04-tasks/task-update-deployment.yaml
 
-- pipelines/pipeline-dotnet-build.yaml
+- 05-pipelines/pipeline-dotnet-build.yaml
 
-- triggers/event-listener-route.yaml
-- triggers/event-listener.yaml
-- triggers/trigger-binding.yaml
-- triggers/trigger-template.yaml
-- triggers/trigger.yaml
+- 06-triggers/event-listener-route.yaml
+- 06-triggers/event-listener.yaml
+- 06-triggers/trigger-binding.yaml
+- 06-triggers/trigger-template.yaml
+- 06-triggers/trigger.yaml
