@@ -74,6 +74,7 @@ spec:
   - name: apply-manifests
     taskRef:
       name: apply-manifests
+      kind: Task
     params:
     - name: manifest_dir
       value: quickstart/aspnet-core/deploy/base
@@ -88,6 +89,7 @@ spec:
   - name: update-deployment
     taskRef:
       name: update-deployment
+      kind: Task
     params:
     - name: deployment
       value: $(params.deployment-name)
@@ -101,6 +103,7 @@ spec:
   - name: deploy-to-prod
     taskRef:
       name: deploy-to-prod
+      kind: Task
     params:
     - name: manifest_dir
       value: quickstart/aspnet-core/deploy/base
