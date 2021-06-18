@@ -17,6 +17,8 @@ resources:
 - 04-tasks/task-update-deployment.yaml
 
 - 05-pipelines/pipeline-dotnet-build.yaml
+- 05-pipelines/pipeline-dotnet-docker-build.yaml
+- 05-pipelines/pipeline-dotnet-s2i-build.yaml
 
 - 06-triggers/event-listener-route.yaml
 - 06-triggers/event-listener.yaml
