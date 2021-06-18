@@ -103,7 +103,7 @@ spec:
       name: deploy-to-prod
     params:
     - name: manifest_dir
-      value: quickstart/aspnet-core/k8s/base
+      value: quickstart/aspnet-core/deploy/base
     - name: deployment
       value: $(params.deployment-name)
     - name: image
