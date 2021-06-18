@@ -76,7 +76,9 @@ spec:
       name: apply-manifests
     params:
     - name: manifest_dir
-      value: quickstart/aspnet-core/k8s/base
+      value: quickstart/aspnet-core/deploy/base
+    - name: namespace
+      value: dotnet-dev
     workspaces:
     - name: source
       workspace: shared-workspace
@@ -91,6 +93,8 @@ spec:
       value: $(params.deployment-name)
     - name: IMAGE
       value: $(params.IMAGE)@$(tasks.build-image.results.IMAGE_DIGEST)
+    - name: namespace
+      value: dotnet-dev
     runAfter:
     - apply-manifests
 
@@ -107,7 +111,7 @@ spec:
     - name: digest
       value: $(tasks.build-image.results.IMAGE_DIGEST)
     - name: namespace
-      value: dotnet-apps-prod
+      value: dotnet-prod
     workspaces:
     - name: source
       workspace: shared-workspace

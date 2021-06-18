@@ -30,7 +30,7 @@ spec:
       args:
         - |-
 
-          cd $(inputs.params.manifest_dir) 
+          cd $(inputs.params.manifest_dir)
 
           cat <<EOF >./kustomization.yaml
           resources:
