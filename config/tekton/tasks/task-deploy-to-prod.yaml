@@ -50,5 +50,6 @@ spec:
           cat kustomization.yaml
 
           oc apply -k .
-          oc rollout status deploy/$(inputs.params.deployment)
+          oc rollout -n $(inputs.params.namespace) \
+            status deploy/$(inputs.params.deployment)
 
