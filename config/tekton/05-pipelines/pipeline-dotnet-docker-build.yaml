@@ -91,7 +91,7 @@ spec:
       name: apply-manifests
     params:
     - name: manifest_dir
-      value: quickstart/aspnet-core/k8s
+      value: quickstart/aspnet-core/deploy/base
     - name: namespace
       value: dotnet-dev
     workspaces:
