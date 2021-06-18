@@ -22,4 +22,3 @@ spec:
         - |-
           echo Applying manifests in $(inputs.params.manifest_dir) directory
           oc apply -n $(inputs.params.namespace) -k $(inputs.params.manifest_dir)
-          echo -----------------------------------
