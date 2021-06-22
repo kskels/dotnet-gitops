@@ -1,8 +1,9 @@
 # Tekton Pipelines
 
 ```bash
-oc new-project dotnet-apps-prod
-oc new-project dotnet-apps-dev
+oc new-project dotnet-dev
+oc new-project dotnet-prod
+oc new-project dotnet-cicd
 
 oc apply -f roles/
 oc apply -f tasks/
