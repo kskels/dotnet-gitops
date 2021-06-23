@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: aspnet-core-app-prod
+  name: aspnet-core-app
   namespace: openshift-gitops
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
     namespace: dotnet-gitops
   project: default
   source:
-    path: quickstart/aspnet-core/k8s/overlays/prod
+    path: quickstart/aspnet-core/deploy/overlays/argo
     repoURL: https://github.com/kskels/azure-cache-redis-samples.git
     targetRevision: main
   syncPolicy:

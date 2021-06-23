@@ -11,6 +11,10 @@ spec:
     namespace: dotnet-gitops
   project: default
   source:
-    path: quickstart/aspnet-core/k8s/base
+    path: quickstart/aspnet-core/deploy/base
     repoURL: https://github.com/kskels/azure-cache-redis-samples.git
     targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

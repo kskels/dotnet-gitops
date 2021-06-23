@@ -11,6 +11,6 @@ spec:
   source:
     directory:
       recurse: true
-    path: cluster
+    path: config/argocd/cluster
     repoURL: https://github.com/kskels/dotnet-gitops.git
     targetRevision: HEAD
