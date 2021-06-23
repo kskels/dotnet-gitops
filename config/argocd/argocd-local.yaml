@@ -6,4 +6,3 @@ spec:
   server:
     route:
       enabled: true
-
